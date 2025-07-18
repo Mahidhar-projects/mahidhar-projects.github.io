@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects Showcase</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="container mx-auto max-w-4xl bg-white shadow-lg rounded-xl p-8 md:p-12">
+        <!-- Header Section -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">My Web Projects</h1>
+            <p class="text-lg text-gray-600">A collection of my web applications and projects.</p>
+        </header>
+
+        <!-- Websites Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Project Card 1: Image-Pro -->
+            <a href="https://mahidhar-projects.github.io/Image-Pro/" target="_blank" rel="noopener noreferrer"
+               class="block bg-blue-50 hover:bg-blue-100 transition-colors duration-300 rounded-lg shadow-md hover:shadow-xl p-6 border-2 border-blue-200">
+                <div class="flex items-center mb-4">
+                    <!-- Icon for Image-Pro (e.g., a camera or image icon) -->
+                    <svg class="w-10 h-10 text-blue-600 mr-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-4 4 4 4-4V5h-2L9 9 4 4h12z" clip-rule="evenodd"></path>
+                    </svg>
+                    <h2 class="text-2xl font-bold text-gray-800">Image-Pro</h2>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    A web application designed for basic image manipulation, allowing users to apply filters, resize, and perform other common image editing tasks directly in their browser.
+                </p>
+                <span class="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">
+                    View Project
+                </span>
+            </a>
+
+            <!-- Project Card 2: Make My Quiz -->
+            <a href="https://mahidhar-projects.github.io/make-my-quiz" target="_blank" rel="noopener noreferrer"
+               class="block bg-green-50 hover:bg-green-100 transition-colors duration-300 rounded-lg shadow-md hover:shadow-xl p-6 border-2 border-green-200">
+                <div class="flex items-center mb-4">
+                    <!-- Icon for Make My Quiz (e.g., a question mark or quiz icon) -->
+                    <svg class="w-10 h-10 text-green-600 mr-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-4a1 1 0 00-.894.553L7.382 9H4a1 1 0 000 2h3.382l-.276.553A1 1 0 008 12.5V14a1 1 0 102 0v-1.5a1 1 0 00-.894-.553L12.618 11H16a1 1 0 100-2h-3.382l.276-.553A1 1 0 0012 5.5V4a1 1 0 10-2 0v1.5z" clip-rule="evenodd"></path>
+                    </svg>
+                    <h2 class="text-2xl font-bold text-gray-800">Make My Quiz</h2>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    An interactive web application that allows users to create custom quizzes on various topics. Users can define questions, answers, and even set a timer for their quizzes.
+                </p>
+                <span class="inline-block bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-green-700 transition-colors duration-300">
+                    View Project
+                </span>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p class="mb-2">&copy; 2025 Mahidhar. All rights reserved.</p>
+            <p>
+                Follow me on <a href="https://x.com/Mahidhar_001" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">X (@Mahidhar_001)</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
