@@ -31,6 +31,16 @@
     <!-- Favicon: Custom SVG document icon -->
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwN2JmZiI+PHBhdGggZD0iTTE0IDJINmMtMS4xIDAtMiAuOS0yIDJ2MTZjMCAxLjEuOSAyIDIgMmgxMmMxLjEgMCAyLS45IDItMlY4bC02LTZ6TTYgMjBWNGg3djVoNXYxMUg2eiIvPjwvc3ZnPg==" type="image/svg+xml">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-979LS18CX4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-979LS18CX4');
+    </script>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -149,12 +159,29 @@
 
         <!-- Footer -->
         <footer class="text-center mt-10 text-gray-500 text-sm">
-            <p class="mb-1">
-                Follow me on <a href="https://x.com/Mahidhar_001" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">X (@Mahidhar_001)</a>
-            </p>
-            <p>
-                Email: <a href="mailto:mahidhartatipakala@gmail.com" class="text-blue-500 hover:underline">mahidhartatipakala@gmail.com</a>
-            </p>
+            <div class="flex justify-between items-center w-full max-w-xs mx-auto">
+                <p>Follow me on</p>
+                <div class="flex space-x-4"> <!-- Container for logos -->
+                    <a href="https://github.com/Mahidhar-projects" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-400 transition-colors duration-300">
+                        <!-- Real GitHub Logo SVG -->
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.53-.49-.33-.84-.81-1.06-.81-1.06-.6-.42.04-.41.04-.41.66.05 1 .68 1 .68.59.97 1.59.69 1.97.53.06-.41.24-.69.45-.85-1.5-.17-3.06-.75-3.06-3.34 0-.74.26-1.35.7-1.82-.07-.17-.32-.86.07-1.8 0 0 .53-.17 1.74.69.5-.14 1.03-.21 1.56-.21.53 0 1.06.07 1.56.21 1.21-.86 1.74-.69 1.74-.69.39.94.14 1.63.07 1.8.44.47.7 1.08.7 1.82 0 2.59-1.59 3.16-3.07 3.33.25.22.5.67.5 1.35 0 .97-.01 1.75-.01 1.99 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/Mahidhar_001" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400 transition-colors duration-300">
+                        <!-- Real X (Twitter) Logo SVG -->
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.21-6.917L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.714 6.236L18.244 2.25zm-2.91 17.485L9.661 7.139H7.118l8.502 12.606h2.416z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.roblox.com/users/8515266461/profile" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-400 transition-colors duration-300">
+                        <!-- Real Roblox Logo SVG (from official sources) -->
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.636 17.591H6.136V6.409h4.228c2.14 0 3.515.82 3.515 2.515 0 1.25-.636 1.909-1.818 2.227l2.091 6.439h-3.909l-1.636-5.061h-1.455v5.061zm-1.455-6.409h1.455c.727 0 1.136-.212 1.136-.879 0-.667-.409-.879-1.136-.879h-1.455v1.758z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
