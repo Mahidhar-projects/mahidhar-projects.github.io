@@ -1,101 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Websites Showcase</title>
-    <!-- Load Tailwind CSS from CDN for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Inter font from Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
-</head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
-
-    <!-- Main container for the entire page -->
-    <div class="min-h-screen p-4 sm:p-8 flex flex-col items-center">
-        
-        <!-- Header section with a title and description -->
-        <header class="w-full max-w-4xl text-center mb-8">
-            <h1 class="text-4xl sm:text-5xl font-bold mb-2">My Websites</h1>
-            <p class="text-lg text-gray-600 dark:text-gray-300">
-                A showcase of my projects and web applications.
-            </p>
-        </header>
-
-        <!-- Main content area where website cards will be displayed -->
-        <main class="w-full max-w-4xl">
-            <!-- This is the container for the cards. JavaScript will populate this div. -->
-            <div id="websites-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Cards will be dynamically inserted here by JavaScript -->
+<html>
+    <head>
+        <title>Mahidhar Projects</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="Content">
+            <h1>My Projects</h1>
+            <div class="Imagine-Mind">
+                <h2>Imagine Mind</h2>
+                <p>Generate and edit images with power of AI.</p>
+                <div class="imagine-mind-button">
+                    <button role="button" onclick="window.location.href='https://imagine-mind.web.app'">Open</button>
+                </div>
             </div>
-        </main>
-
-        <!-- Footer section -->
-        <footer class="w-full max-w-4xl text-center mt-8 p-4 text-gray-500 dark:text-gray-400">
-        </footer>
-    </div>
-
-    <!-- JavaScript to handle dynamic content -->
-    <script>
-        // Get the container for the website cards
-        const websitesContainer = document.getElementById('websites-container');
-        
-        // Define the array of websites to display
-        const websites = [
-            {
-                name: "Imagine Mind",
-                url: "https://imagine-mind.web.app"
-            }
-            // You can add more websites to this array
-            // {
-            //     name: "Another Website",
-            //     url: "https://another-website.com",
-            //     description: "Description of your other website."
-            // }
-        ];
-
-        // Function to create and append a website card to the container
-        function createWebsiteCard(website) {
-            // Create the main card element
-            const card = document.createElement('div');
-            card.className = "bg-white dark:bg-gray-800 shadow-lg rounded-xl transition-all hover:scale-[1.02] hover:shadow-xl dark:border-gray-700 p-6";
-
-            // Populate the card's inner HTML using template literals
-            card.innerHTML = `
-                <!-- Card Header -->
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">${website.name}</h3>
-                </div>
-                
-                <!-- Card Footer with button -->
-                <div class="mt-6 flex justify-end">
-                    <a href="${website.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors dark:bg-blue-500 dark:hover:bg-blue-600">
-                        Visit Site
-                        <!-- SVG for the arrow icon (lucide-react equivalent) -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-4 w-4">
-                            <path d="M5 12h14"/>
-                            <path d="m12 5 7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
-            `;
-            
-            // Add the created card to the main container
-            websitesContainer.appendChild(card);
-        }
-
-        // Iterate through the websites array and create a card for each
-        websites.forEach(createWebsiteCard);
-
-        // Set the current year in the footer
-        // document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-</body>
+        </div>
+    </body>
 </html>

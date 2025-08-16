@@ -1,0 +1,58 @@
+body {
+    background-color: darkblue;
+}
+
+.Content {
+    text-align: center;
+}
+h1 {
+    font-size: 90px;
+    color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.Imagine-Mind {
+    text-align: left;
+    border: 5px solid;
+    width: 400px;
+    background-color: rgb(255, 0, 162);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+h2 {
+    margin: 20px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 10px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.imagine-mind-button {
+    text-align: end;
+    margin: 10px;
+}
+
+button {
+    background-color:#007bff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button:hover {
+    background-color: #0056b3;
+}
